@@ -1,14 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
 *,
 *::before ::after {
-    box-sizing: border-box;
+  /* Use a more-intuitive box-sizing model */
+  box-sizing: border-box;
 }
-*{
-    margin:0;
-    padding:0;
+* {
+  /* remove default margin */
+  margin: 0;
+  padding: 0;
 }
-
+img,
+picture,
+video,
+svg {
+  /* improve media default */
+  max-width: 100%;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Avoid text overflows */
+  overflow-wrap: break-word;
+}
+html,
 body {
-    font-family: 'Karla', sans-serif;
-    background-color: rgb(229, 239, 245);
+  /* Allow percentage-based heights in the application */
+  height: 100%;
+}
+body {
+  /* Typographic tweaks!
+  . Add accessible line-height
+  . Improve text rendering */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  font-family: "Karla", sans-serif;
+  background-color: rgb(229, 239, 245);
 }
