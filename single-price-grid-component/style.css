@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:&display=swap");
 *,
 *::before ::after {
   /* Use a more-intuitive box-sizing model */
@@ -40,4 +40,42 @@ body {
 
   font-family: "Karla", sans-serif;
   background-color: rgb(229, 239, 245);
+}
+.main {
+  height: 100vh;
+  margin-top: 2rem;
+}
+.container {
+  max-width: 600px;
+  width: 85%;
+  margin: 0 auto;
+}
+.community {
+  background-color: #fff;
+  padding: 1rem;
+}
+.community .heading {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.community .title {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.community .content {
+  color: hsl(218, 22%, 67%);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.subscription {
+  background-color: hsl(179, 62%, 43%);
+  padding: 1rem;
+}
+.whyus {
+  background-color: hsl(218, 22%, 67%);
+  padding: 1rem;
 }
