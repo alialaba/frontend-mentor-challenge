@@ -26,6 +26,9 @@ h6 {
   /* Avoid text overflows */
   overflow-wrap: break-word;
 }
+a {
+  text-decoration: none;
+}
 html,
 body {
   /* Allow percentage-based heights in the application */
@@ -74,6 +77,35 @@ body {
 .subscription {
   background-color: hsl(179, 62%, 43%);
   padding: 1rem;
+}
+.subscription .heading {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.subscription .duration {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.subscription .price {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.subscription .title {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.btn,
+.btn:visited,
+.btn:link {
+  display: block;
+  background-color: hsl(71, 73%, 54%);
+  text-align: center;
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  font-weight: 700;
 }
 .whyus {
   background-color: hsl(218, 22%, 67%);
