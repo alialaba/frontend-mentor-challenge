@@ -106,6 +106,7 @@ video {
 }
 .menu-toggle {
   display: none;
+  font-size: 700;
 }
 
 .nav {

@@ -10,28 +10,30 @@
     top: 40px;
     left: 0;
     right: 0;
-    padding: 2rem;
+    padding: 3rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    /* display: none; */
+
     visibility: hidden;
   }
   .nav-open .nav {
     visibility: visible;
   }
-  .nav-open .menu-toggle[name="menu-outline"] {
+  .nav-open .icon-toggle[name="menu-outline"] {
     display: none;
   }
-  .nav-open .menu-toggle[name="close-outline"] {
+  .nav-open .icon-toggle[name="close-outline"] {
     display: block;
   }
   /* Trigger Nav in js for smaller screen size */
   .nav-list {
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
   .nav-link {
-    font-size: 0.9rem;
+    font-size: 1.8rem;
+    font-weight: 700;
   }
   .nav-link__btn {
     display: none;
