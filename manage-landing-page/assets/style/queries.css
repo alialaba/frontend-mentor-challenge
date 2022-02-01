@@ -1,0 +1,49 @@
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Trigger Nav in js smaller screen size */
+  .nav {
+    background-color: ivory;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* display: none; */
+    visibility: hidden;
+  }
+  .nav-open .nav {
+    visibility: visible;
+  }
+  .nav-open .menu-toggle[name="menu-outline"] {
+    display: none;
+  }
+  .nav-open .menu-toggle[name="close-outline"] {
+    display: block;
+  }
+  /* Trigger Nav in js for smaller screen size */
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+  }
+  .nav-link__btn {
+    display: none;
+  }
+  /******************/
+  /* HERO SECTIOn */
+  /******************/
+  .hero-wrapper {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .hero-content {
+    text-align: center;
+  }
+}
