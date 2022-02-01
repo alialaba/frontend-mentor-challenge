@@ -108,7 +108,7 @@ video {
 
   position: relative;
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 .menu-toggle {
   display: none;
