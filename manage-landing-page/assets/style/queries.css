@@ -62,4 +62,41 @@
   }
 }
 @media (max-width: 944px) {
+  .header {
+    padding: 0 3rem;
+  }
+  .nav-link__btn {
+    display: none;
+  }
+  .step .title {
+    background-color: aliceblue;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .number {
+    /* top: 10px; */
+  }
+}
+@media (min-width: 900px) {
+  /* GENERAL STYLING */
+  .subheading {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  .text {
+    width: 50%;
+    font-size: 1.1rem;
+  }
+  .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-content {
+    width: 40%;
+  }
+  .about-category {
+    width: 47%;
+  }
 }
