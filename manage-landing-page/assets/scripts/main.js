@@ -1,9 +1,10 @@
 // VARIABLES
 const headerEl = document.querySelector(".header");
-const btnEl = document.querySelector(".menu-toggle");
+const btnEl = document.querySelector(".menu");
 
 //eventListener
-btnEl.addEventListener("click", () => {
-    headerEl.classList.toggle("nav-open");
-})
+const menuClick = () => {
+    headerEl.classList.toggle("nav--open");
+}
+btnEl.addEventListener("click", menuClick)
 
