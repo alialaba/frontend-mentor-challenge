@@ -65,8 +65,64 @@ video {
 /******************/
 /* GENERAL STYLES */
 /******************/
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: relative;
+  margin-top: 1.5rem;
+}
+.logo{
+  height: 1.8rem;
+}
+.menu{
+  cursor: pointer;
+}
+.menu__toggle[name="menu-outline"],
+.menu__toggle[name="close-outline"] {
+ font-size: 3rem;
+}
+.menu__toggle[name="close-outline"]{
+  /* visibility: hidden; */
+  display: none;
+}
+.nav{
+  background-color: #fff;
+  filter: drop-shadow(2px 3px 5px rgba(0,0,0, .2));
+  border-radius: 4px;
+  text-align: center;
+  position: absolute; 
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 2rem;
+  padding: 3rem;
+  visibility: hidden;
+}
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.nav__link--btn{
+  display: none;
+}
+.nav--open .nav{
+  visibility: visible;
 
-
+}
+/**post defined css for toggle***/
+.nav--open .menu__toggle[name="close-outline"]{
+  display: block;
+}
+.nav--open .menu__toggle[name="menu-outline"]{
+  display: none;
+}
+/**post defined css for toggle***/
 /******************/
 /* End GENERAL STYLES */
 /******************/
