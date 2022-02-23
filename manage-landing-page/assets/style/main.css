@@ -87,6 +87,19 @@ video {
   /* visibility: hidden; */
   display: none;
 }
+
+.btn,
+.btn:link,
+.btn:visited{
+  display: inline-block;
+  border: 1px solid red;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 20px;
+   color: #fff;
+   font-size: 1.5rem;
+   filter: drop-shadow(2px 3px 5px rgba(0,0,0,0.3));
+}
 .nav{
   background-color: #fff;
   filter: drop-shadow(2px 3px 5px rgba(0,0,0, .2));
@@ -126,18 +139,27 @@ video {
 /******************/
 /* End GENERAL STYLES */
 /******************/
-.section-hero{
+.section-hero, .section-about{
  padding: 2rem; 
 }
 .heading{
   font-size: 4rem;
   font-weight: 900;
   text-align: center;
+   margin-bottom: 1rem;
  
+}
+.subheading{
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-align: center;
+   margin-bottom: 1rem;
 }
 .text{
   font-size: 1.5rem;
   text-align: center;
+   margin-bottom: 2rem;
+ 
 }
 
 /******************/
@@ -147,4 +169,33 @@ video {
   display: flex;
   flex-direction: column-reverse;
    margin-bottom: 2rem;
+   text-align: center;
+}
+.hero--btn{
+  background-color: var(--clr-pri-bright-red);
+}
+/******ABOUT SECTION*********/
+.about__category--step{
+  margin-bottom: 4rem;
+}
+.about__row{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--clr-neut-pale-red);
+  padding: .8rem 0;
+  border-radius: 4px;
+}
+.about__row--number{
+  padding: .9rem 1.8rem;
+  background-color: var(--clr-pri-bright-red);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 70px;
+}
+.about__row--title{
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
 }
