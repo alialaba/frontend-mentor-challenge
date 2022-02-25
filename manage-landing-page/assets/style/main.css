@@ -139,7 +139,7 @@ video {
 /******************/
 /* End GENERAL STYLES */
 /******************/
-.section-hero, .section-about{
+.section-hero, .section-about,.section-testimonial{
  padding: 2rem; 
 }
 .heading{
@@ -157,10 +157,17 @@ video {
 }
 .text{
   font-size: 1.5rem;
-  text-align: center;
+  
    margin-bottom: 2rem;
  
 }
+.text--primary{
+text-align: center;
+}
+.text--secondary{
+text-align: left;
+}
+
 
 /******************/
 /* HERO SECTION STYLES */
@@ -198,4 +205,34 @@ video {
   font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
+}
+
+/*********Testimonial section*********/
+.testimonial{
+  /* display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem; */
+}
+.testimonial__item{
+  background-color: var(--clr-neut-light-gray);
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.testimonial__img{
+  width: 70px;
+  position: absolute;
+ left: 140px;
+bottom: 170px;
+ /* margin-bottom: 3rem; */
+}
+.testimonial__name{
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+ 
+}
+.test{
+   margin-top: 5rem;
 }
