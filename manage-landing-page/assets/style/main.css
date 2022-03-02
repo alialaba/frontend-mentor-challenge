@@ -221,7 +221,7 @@ text-align: left;
   padding: 6rem 2rem;
   margin-bottom: 2rem;
   position: relative;
-  
+  display: none;
 }
 .testimonial__img{
   width: 70px;
@@ -242,6 +242,7 @@ text-align: left;
   height: 15px;
   border: 1px solid var(--clr-pri-bright-red);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .testimonial__name{
@@ -263,12 +264,13 @@ text-align: left;
 }
 .prev,.next{
   position: absolute;
-  /* top: 5%; */
   font-size: 2rem;
   bottom: -115%;
-  /* margin-left: 20px; */
   cursor: pointer;
 }
 .next{
   right: 15px;
+}
+.active, .dot:hover {
+  background-color: var(--clr-pri-bright-red);
 }

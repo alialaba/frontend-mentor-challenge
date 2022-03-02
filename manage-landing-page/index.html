@@ -126,7 +126,7 @@
             visibility on larger milestones at all times keeps everyone motivated.”
             </p>
           </div>
-          <!-- <div class="testimonial__item">
+          <div class="testimonial__item">
             <img src="./assets/images/avatar-ali.png" alt="Ali Bravo" class="testimonial__img">
             <p class="testimonial__name">Ali Bravo</p>
             <p class="text text--primary">
@@ -148,16 +148,16 @@
             <p class="testimonial__name">Shanai Gough</p>
             <p class="text text--primary">“Their software allows us to track, manage and collaborate on our projects
             from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
-          </div> -->
+          </div>
         </div>
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)" >&#10095;</a>
         
         <div class="dots">
-          <span class="dots__circle"></span>
-          <span class="dots__circle"></span>
-          <span class="dots__circle"></span>
-          <span class="dots__circle"></span>
+          <span class="dots__circle" onclick="currentSlide(1)" ></span>
+          <span class="dots__circle" onclick="currentSlide(2)"></span>
+          <span class="dots__circle" onclick="currentSlide(3)"></span>
+          <span class="dots__circle" onclick="currentSlide(4)"></span>
         </div>
         <div style="display: flex; justify-content: center; margin-top: 4rem;">
           <a href="#" class="btn testimonial__btn">Get Started</a>
