@@ -62,3 +62,25 @@ video {
 /* CSS RESET STYLES */
 /******************/
 
+/******************/
+/* NAVIGATION STYLES */
+/******************/
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border: 1px solid;
+  padding: 2rem;
+/* helps keep the header stick while toggling */
+   height: 8rem; 
+}
+.header__logo{
+  /* height: 20px; */
+  width: 80px;
+}
+.menu__toggle[name="menu-outline"],
+.menu__toggle[name="close-outline"]{
+      font-size: 2.2rem;
+      cursor: pointer;
+}
