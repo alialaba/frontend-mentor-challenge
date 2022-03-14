@@ -30,7 +30,7 @@
     .nav--open .nav{
       visibility: visible;
       opacity: 1; 
-       pointer-events: auto;
+      pointer-events: auto;
     }
     .nav--open .menu__toggle[name="close-outline"]{
         display: block;
