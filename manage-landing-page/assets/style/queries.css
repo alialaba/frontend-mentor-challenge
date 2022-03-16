@@ -13,13 +13,14 @@
 }
  .hero__content{
     width: 80%; 
+    align-self: center;
 }
 .heading{
   font-weight: 700;
   font-size: 5rem;
 }
 .text{
-    font-size: 1.9rem;
+    font-size: 2rem;
 }
 
 
@@ -121,9 +122,32 @@
     .menu__btn{
         display: none;
     }
+
+    /**************/
+    /*Hero section*/
+    /**************/
     .hero{
         grid-template-columns: 1fr;
-        /* flex-direction: column-reverse; */
+        gap: 4rem;
+    }
+    .hero__content{
+        text-align: center;
+    }
+    .hero__img{
+     grid-row: 1;
+    
+    }
+    .heading{
+        font-size: 4rem;
+    }
+    .text{
+        font-size: 1.7rem;
+    }
+    .btn,
+    .btn:link,
+    .btn:visited{
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
     }
     
 }

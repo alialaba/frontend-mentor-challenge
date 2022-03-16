@@ -116,7 +116,7 @@ video {
   background: none;
 } */
 section{
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 /* HERO SECTION */
 .hero{
@@ -127,6 +127,7 @@ section{
 }
 .heading{
    margin-bottom: 2rem;
+   
 }
 .text{
    margin-bottom: 3rem;
