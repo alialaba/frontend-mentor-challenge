@@ -1,8 +1,68 @@
-@media(max-width:600px){
-    
+/**************************/
+/* ABOVE 1001px (Desktop) */
+/**************************/
+@media(min-width:1001px){
+.nav__link{
+    font-size: 1.4rem;
+
+}
+.btn,
+.btn:link,
+.btn:visited{
+    padding: 1.4rem 2.8rem;
+}
+ .hero__content{
+    width: 80%; 
+}
+.heading{
+  font-weight: 700;
+  font-size: 5rem;
+}
+.text{
+    font-size: 1.9rem;
 }
 
-/* tab/mobile view */
+
+}
+
+
+/**************************/
+/* Above  768px (smaller desktop) */
+/**************************/
+
+@media(min-width:768px){ 
+.nav__list{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    column-gap: 1.5rem; 
+}
+.menu__toggle[name="menu-outline"], 
+.menu__toggle[name="close-outline"] { 
+    display: none; 
+
+}
+.btn,
+.btn:link,
+.btn:visited{
+    padding: 1rem 2rem;
+} 
+.heading{
+    font-size: 4rem;
+}
+.text{
+    font-size: 1.6rem;
+}
+/* .hero__img{
+    width: 45%;
+} */
+}
+
+
+
+/**************************/
+/* BELOW 768px (Tablets) */
+/**************************/
 @media(max-width:768px){
 
     /* onToggle mobile view UI*/
@@ -62,54 +122,19 @@
         display: none;
     }
     .hero{
-        flex-direction: column-reverse;
+        grid-template-columns: 1fr;
+        /* flex-direction: column-reverse; */
     }
     
 }
 
-/* //desktop view */
 
-@media(min-width:768px){ 
-.nav__list{ 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    column-gap: 1.5rem; 
-}
-.menu__toggle[name="menu-outline"], 
-.menu__toggle[name="close-outline"] { 
-    display: none; 
-
-}
-.btn,
-.btn:link,
-.btn:visited{
-    padding: 1rem 2rem;
-} 
-}
-@media(min-width:1001px){
-.nav__link{
-    font-size: 1.4rem;
-
-}
-.btn,
-.btn:link,
-.btn:visited{
-    padding: 1.4rem 2.8rem;
-}
- .hero__content{
-     align-self: center;
-    width: 38%;
-}
-.heading{
-  font-weight: 700;
-  font-size: 5rem;
-  margin-bottom: 2rem;
-}
-.text{
-    font-size: 1.9rem;
-    margin-bottom: 3rem;
-}
-
-
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media(max-width:544px){
+    .heading{
+        text-align: cen;
+    }
+    
 }

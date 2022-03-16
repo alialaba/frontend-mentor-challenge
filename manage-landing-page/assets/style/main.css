@@ -64,7 +64,7 @@ video {
 /******************/
 .container{
   width: 90%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 /******************/
@@ -75,6 +75,7 @@ video {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding:3rem 0;
 /* helps keep the header stick while toggling */
    height: 8rem; 
 }
@@ -114,11 +115,20 @@ video {
   border: 1px solid var(--clr-bright-red);
   background: none;
 } */
-
+section{
+  padding: 4rem 0;
+}
 /* HERO SECTION */
 .hero{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.8rem;
+  
+}
+.heading{
+   margin-bottom: 2rem;
+}
+.text{
+   margin-bottom: 3rem;
 }
 /* .hero__content{} */
