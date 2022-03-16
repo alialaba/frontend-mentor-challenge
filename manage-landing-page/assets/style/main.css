@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  /* border:1px solid red; */
 }
 
 html,
@@ -62,7 +62,11 @@ video {
 /******************/
 /* CSS RESET STYLES */
 /******************/
-
+.container{
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 /******************/
 /* NAVIGATION STYLES */
 /******************/
@@ -71,13 +75,12 @@ video {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 2rem;
 /* helps keep the header stick while toggling */
    height: 8rem; 
 }
 .header__logo{
   /* height: 20px; */
-  width: 80px;
+  /* width: 100px; */
 }
 .nav__link,
 .nav__link:link,
@@ -90,7 +93,9 @@ video {
 }
 .menu__toggle[name="menu-outline"],
 .menu__toggle[name="close-outline"]{
-      font-size: 2.2rem;
+      /* font-size: 2.2rem; */
+      width: 4rem;
+      height: 4rem;
       cursor: pointer;
 }
 
@@ -109,3 +114,11 @@ video {
   border: 1px solid var(--clr-bright-red);
   background: none;
 } */
+
+/* HERO SECTION */
+.hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* .hero__content{} */
