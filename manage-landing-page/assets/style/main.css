@@ -190,6 +190,7 @@ section{
     position: relative;
     text-align: center;
       margin-top: 4rem;
+      border-radius: 10px;
 }
 .testimonial__name{
 font-size: 1.5rem;
@@ -208,6 +209,7 @@ margin-bottom: 2rem;
   bottom: 160px;
 }
 .text--col{
-  padding: 3rem;
-  font-size: 1.3rem;
+  padding: 3rem 2rem;
+  font-size: 1.4rem;
+  color: var(--clr-light-blue);
 }
