@@ -10,7 +10,7 @@
 }
 /* to solve the space btw the nav-item since gap is not fully supported by all browser */
     .nav__list > * + *{
-        margin: 0 0 0 4rem ;
+        margin: 0 0 0 3rem ;
     }
 
 .menu__toggle[name="menu-outline"], 
@@ -28,12 +28,12 @@
     padding: 1.4rem 2.8rem;
 }
  .hero__content{
-    width: 80%; 
+    width: 85%; 
     align-self: center;
 }
 /**About section**/
 .about__content{
-    width: 70%;
+    width: 75%;
 }
 .about__subtitle{
     font-size: 2rem;

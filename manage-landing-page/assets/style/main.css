@@ -91,6 +91,13 @@ video {
   font-weight: 500;
   transition: all .3s;
   cursor: pointer;
+  font-weight: 600;
+  color: var(--clr-dark-blue);
+}
+
+.nav__link:hover,
+.nav__link:focus{
+  color: var(--clr-light-blue);
 }
 .menu__toggle[name="menu-outline"],
 .menu__toggle[name="close-outline"]{
@@ -111,10 +118,10 @@ video {
   box-shadow: 2px 3px 5px rgba(0,0,0, 0.2);
 
 }
-/* .btn:hover{
-  border: 1px solid var(--clr-bright-red);
-  background: none;
-} */
+ .btn:hover,
+ .btn:focus{
+   color: var(--clr-dark-blue);
+} 
 section{
   padding: 3rem 0;
 }
@@ -137,6 +144,7 @@ section{
    margin-bottom: 3rem;
    margin-top: 2rem;
  line-height: 1.6;
+ color: var(--clr-light-blue);
 }
 
 
