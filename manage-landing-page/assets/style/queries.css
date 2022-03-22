@@ -28,7 +28,7 @@
     padding: 1.4rem 2.8rem;
 }
  .hero__content{
-    width: 75%; 
+    width: 80%; 
     align-self: center;
 }
 /**About section**/
@@ -39,7 +39,6 @@
     font-size: 2rem;
 }
 .about__row{
-    
      transform: translateX(-70px);
 }
 
@@ -173,7 +172,7 @@
     /* .heading{
         text-align: center;
     } */
-
+    
     /**ABOUT SECTION**/
     .about{
         grid-template-columns: 1fr;
@@ -181,7 +180,10 @@
     .about__content{
         text-align: center;
     }
-
+.about__row{
+    background-color: var(--clr-pale-red);
+    padding: 5px;
+}
     
     
 }
