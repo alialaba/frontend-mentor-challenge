@@ -129,7 +129,73 @@ section{
    margin-bottom: 2rem;
    
 }
+.subheading{
+  margin-bottom: 2rem;
+}
 .text{
    margin-bottom: 3rem;
 }
-/* .hero__content{} */
+
+/***About Session***/
+.about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 9rem;
+}
+.about__row{
+  display: flex;
+  align-items: center;
+  /* gap: 2rem; wait for browser support */
+  /* margin-bottom: 2rem; */
+}
+
+.about__row > * +*{
+  margin: 0 0 0 2rem;
+}
+.about__number{
+  background: var(--clr-bright-red);
+  color: white;
+  padding:.8rem  1.6rem;
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+.about__subtitle{
+  font-size: 1.4rem;
+}
+
+/***TESTIMONIA***/
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  grid-gap:2rem;
+}
+.center{
+  text-align: center;
+}
+
+.testimonial__item{
+    background-color: var(--clr-light-gray);
+    position: relative;
+    text-align: center;
+      margin-top: 4rem;
+}
+.testimonial__name{
+font-size: 1.5rem;
+font-weight: 700;
+transform: translateY(30px);
+margin-bottom: 2rem;
+}
+.testimonial__content{
+  margin-top: 2rem;
+}
+.testimonial__img{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 160px;
+}
+.text--col{
+  padding: 3rem;
+  font-size: 1.3rem;
+}

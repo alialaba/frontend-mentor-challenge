@@ -1,7 +1,23 @@
 /**************************/
 /* ABOVE 1001px (Desktop) */
 /**************************/
-@media(min-width:1001px){
+@media(min-width:1002px){
+  .nav__list{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    /* gap: 1.5rem;  wait for browser support */
+}
+/* to solve the space btw the nav-item since gap is not fully supported by all browser */
+    .nav__list > * + *{
+        margin: 0 0 0 4rem ;
+    }
+
+.menu__toggle[name="menu-outline"], 
+.menu__toggle[name="close-outline"] { 
+    display: none; 
+
+}  
 .nav__link{
     font-size: 1.4rem;
 
@@ -12,59 +28,59 @@
     padding: 1.4rem 2.8rem;
 }
  .hero__content{
-    width: 80%; 
+    width: 75%; 
     align-self: center;
 }
+/**About section**/
+.about__content{
+    width: 70%;
+}
+.about__subtitle{
+    font-size: 2rem;
+}
+.about__row{
+    
+     transform: translateX(-70px);
+}
+
 .heading{
   font-weight: 700;
   font-size: 5rem;
 }
-.text{
-    font-size: 2rem;
-}
-
-
-}
-
-
-/**************************/
-/* Above  768px (smaller desktop) */
-/**************************/
-
-@media(min-width:768px){ 
-.nav__list{ 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    column-gap: 1.5rem; 
-}
-.menu__toggle[name="menu-outline"], 
-.menu__toggle[name="close-outline"] { 
-    display: none; 
-
-}
-.btn,
-.btn:link,
-.btn:visited{
-    padding: 1rem 2rem;
-} 
-.heading{
-    font-size: 4rem;
+.subheading{
+    font-weight: 700;
+    font-size: 3rem;
 }
 .text{
     font-size: 1.6rem;
+    width: 80%;
 }
-/* .hero__img{
-    width: 45%;
-} */
+
+
 }
+
 
 
 
 /**************************/
-/* BELOW 768px (Tablets) */
+/* BELOW 944px (Tablets) */
 /**************************/
-@media(max-width:768px){
+@media(max-width:1001px){
+
+     .heading{
+        font-size: 4rem;
+    }
+    
+    .text{
+        font-size: 1.7rem;
+    }
+    .btn,
+    .btn:link,
+    .btn:visited{
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+   
 
     /* onToggle mobile view UI*/
      .nav {
@@ -109,7 +125,12 @@
        text-align: center;
        display: flex;
        flex-direction: column;
-       gap: 2rem;
+       /* gap: 2rem; wait for browser support */
+    }
+
+    /* to solve the space btw the nav-item since gap is not fully supported by all browser */
+    .nav__list > * + *{
+        margin: 4rem 0 0 0;
     }
     .nav__link{
         font-size: 1.7rem;
@@ -128,7 +149,7 @@
     /**************/
     .hero{
         grid-template-columns: 1fr;
-        gap: 4rem;
+        grid-gap: 4rem;
     }
     .hero__content{
         text-align: center;
@@ -137,28 +158,30 @@
      grid-row: 1;
     
     }
-    .heading{
-        font-size: 4rem;
-    }
-    .text{
-        font-size: 1.7rem;
-    }
-    .btn,
-    .btn:link,
-    .btn:visited{
-        padding: 1rem 2rem;
-        font-size: 1.6rem;
-    }
+/*About Section*/
+.about__subtitle{
+    font-size: 1.5rem;
+}
     
 }
 
 
 /**************************/
-/* BELOW 544px (Phones) */
+/* BELOW 600px (Phones) */
 /**************************/
-@media(max-width:544px){
-    .heading{
-        text-align: cen;
+@media(max-width:765px){
+    /* .heading{
+        text-align: center;
+    } */
+
+    /**ABOUT SECTION**/
+    .about{
+        grid-template-columns: 1fr;
     }
+    .about__content{
+        text-align: center;
+    }
+
+    
     
 }
