@@ -55,6 +55,10 @@
     width: 80%;
 }
 
+/********simply section**********/
+.simply__content{
+    width: 35%;
+}
 
 }
 
@@ -161,6 +165,10 @@
 .about__subtitle{
     font-size: 1.5rem;
 }
+/********simply section**********/
+.simply__content{
+    width: 50%;
+}
     
 }
 
@@ -184,6 +192,17 @@
     background-color: var(--clr-pale-red);
     padding: 5px;
 }
-    
+
+/*********simply section************/
+.simply{
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+/********simply section**********/
+.simply__content{
+    width: 100%;
+}
+
     
 }

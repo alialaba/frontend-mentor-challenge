@@ -239,3 +239,19 @@ margin-bottom: 2rem;
     border-radius:30px;
 }
 /* style snippet to change active color */
+
+/********simply section*********/
+.section-simplify{
+  background-color: var(--clr-bright-red);
+  color: #fff;
+}
+.simply{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.simply__btn{
+  background-color: #fff;
+  color: var(--clr-bright-red);
+}
