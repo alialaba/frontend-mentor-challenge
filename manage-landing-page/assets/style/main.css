@@ -190,7 +190,8 @@ section{
     position: relative;
     text-align: center;
       margin-top: 4rem;
-      border-radius: 10px;
+      border-radius: 5px;
+      box-shadow: 0 19px 38px rgba(0,0,0, 0.1);
 }
 .testimonial__name{
 font-size: 1.5rem;
@@ -203,13 +204,38 @@ margin-bottom: 2rem;
 }
 .testimonial__img{
   width: 50px;
-  height: 50px;
-  position: absolute;
+  height: 50px; 
+  position: relative;
   transform: translateX(-50%);
-  bottom: 160px;
+  left:50%;
+  bottom: 28px;
+ 
 }
 .text--col{
   padding: 3rem 2rem;
   font-size: 1.4rem;
   color: var(--clr-light-blue);
 }
+
+
+
+.owl-theme .owl-dots .owl-dot span {
+ border: .5px solid var(--clr-bright-red);
+}/* style snippet to change active color */
+.owl-carousel .active span {
+    /* width:10px;
+    height:10px;
+    margin:5px 7px; */
+    background:var(--clr-bright-red) !important;
+    /* display:block; */
+    /* -webkit-backface-visibility:visible; */
+    -webkit-transition:opacity 200ms ease;
+    -moz-transition:opacity 200ms ease;
+    -ms-transition:opacity 200ms ease;
+    -o-transition:opacity 200ms ease;
+    transition:opacity 200ms ease;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+}
+/* style snippet to change active color */

@@ -18,6 +18,14 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">  <title>Frontend Mentor | Manage landing page</title>
 
+  <!-- jquery and owlcarousel styles -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery and owlcarousel styles -->
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -118,62 +126,70 @@
       </div>
     </section>  
 
-     <section class="section-testimonial">
-      <!-- <div class="container"> -->
-        <h2 class="subheading center">What they’ve said</h2>
-        <div class="testimonial grid">
-          <div class="testimonial__item">
-            <img src="./assets/images/avatar-anisha.png" alt="Anisha Li" class="testimonial__img">     
-            <div class="testimonial__content">
-            <p class="testimonial__name">Anisha Li</p>
-            <p class=" text--col">“Manage has supercharged our team’s workflow. The ability to maintain
-            visibility on larger milestones at all times keeps everyone motivated.”
-            </p>
-            </div>
-          </div>
-          <div class="testimonial__item">
-            <img src="./assets/images/avatar-ali.png" alt="Ali Bravo" class="testimonial__img">
-            <div class="testimonial__content">
-            <p class="testimonial__name">Ali Bravo</p>
-            <p class=" text--col">
-              “We have been able to cancel so many other subscriptions since using
-              Manage. There is no more cross-channel confusion and everyone is much
-              more focused.”
-            </p>
-            </div>
-          </div>
-          <div class="testimonial__item">
-            <img src="./assets/images/avatar-richard.png" alt="Richard Watts" class="testimonial__img">
-          <div class="testimonial__content">
-            <p class="testimonial__name">Richard Watts</p>
-            <p class=" text--col">“Manage allows us to provide structure and process. It keeps us organized
-            and focused. I can’t stop recommending them to everyone I talk to!”
-            </p>
-            </div>
-          </div>
-          <div class="testimonial__item">
-            <img src="./assets/images/avatar-shanai.png" alt="Shanai Gough" class="testimonial__img">
-            <div class="testimonial__content">
-            <p class="testimonial__name">Shanai Gough</p>
-            <p class=" text--col">“Their software allows us to track, manage and collaborate on our projects
-            from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
-          </div>
-          </div>
-        </div>
-        <!-- <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlide(1)">&#10095;</a>
-        
-        <div class="dots">
-          <span class="dots__circle" onclick="currentSlide(1)" ></span>
-          <span class="dots__circle" onclick="currentSlide(2)"></span>
-          <span class="dots__circle" onclick="currentSlide(3)"></span>
-          <span class="dots__circle" onclick="currentSlide(4)"></span>
-        </div> -->
-        <div style="display: flex; justify-content: center; margin-top: 4rem; margin-bottom: 4rem;">
-          <a href="#" class="btn testimonial__btn">Get Started</a>
-        </div>
-      <!-- </div> -->
-    </section> 
+     
+<section class="section-testimonial">
+  <!-- <div class="container"> -->
+<h2 class="subheading center">What they’ve said</h2>
+<div class="testimonial grid">
+<div id="customers-testimonial" class="owl-carousel owl-theme">
+  <!-- test 1 -->
+  <div class="item">
+    <div class="testimonial__item">
+       <div class="testimonial__img"><img src="./assets/images/avatar-anisha.png" alt="Anisha Li" /></div>
+    <div class="testimonial__content">
+      <p class="testimonial__name">Anisha Li</p>
+      <p class=" text--col">“Manage has supercharged our team’s workflow. The ability to maintain
+        visibility on larger milestones at all times keeps everyone motivated.”
+      </p>
+    </div>
+      </div>
+  </div>
+
+  <!-- test 2 -->
+  <div class="item">
+    <div class="testimonial__item">
+      <div class="testimonial__img"><img src="./assets/images/avatar-ali.png" alt="Ali" /></div>
+      <div class="testimonial__content">
+        <p class="testimonial__name">Ali Bravo</p>
+        <p class=" text--col">“We have been able to cancel so many other subscriptions since using
+        Manage. There is no more cross-channel confusion and everyone is much
+        more focused.”
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- test 3 -->
+  <div class="item">
+    <div class="testimonial__item">
+      <div class="testimonial__img"><img src="./assets/images/avatar-richard.png" alt="Anisha Li" /></div>
+      <div class="testimonial__content">
+        <p class="testimonial__name">Richards Watt</p>
+        <p class=" text--col">“Manage allows us to provide structure and process. It keeps us organized
+        and focused. I can’t stop recommending them to everyone I talk to!”
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- test 4 -->
+  <div class="item">
+    <div class="testimonial__item">
+      <div class="testimonial__img"><img src="./assets/images/avatar-shanai.png" alt="Anisha Li" /></div>
+      <div class="testimonial__content">
+        <p class="testimonial__name">Shanai Gough</p>
+        <p class=" text--col">“Their software allows us to track, manage and collaborate on our projects
+        from anywhere. It keeps the whole team in-sync without being intrusive.”
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div style="display: flex; justify-content: center; margin-top: 4rem; margin-bottom: 4rem;">
+  <a href="#" class="btn testimonial__btn">Get Started</a>
+</div>
+</section>
+
 <!-- <section class="section-simplify">
   <div class="simply">
     <div class="container">
@@ -225,43 +241,45 @@
   </div>
   </div>
 </footer> -->
+
   </main>
   
-  
-  
 
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-  
-  
-
-  
-
-  
-
-  
-  
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
   <script src="./assets/scripts/main.js"></script>
-</body>
+
+  <!-- jquery and owlcarousel scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+  $('#customers-testimonial').owlCarousel({
+    loop:true,
+    margin:15,
+    nav:false,
+     /*added by me*/
+    // center: true,
+    // item: 4,
+    dots: true,
+    /*added by me*/
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+</script>
+  <!-- jquery and owlcarousel scripts -->
+  </body>
 </html>
