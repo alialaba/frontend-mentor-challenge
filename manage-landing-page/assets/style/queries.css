@@ -59,6 +59,7 @@
 .simply__content{
     width: 35%;
 }
+/************Footer**********/
 
 }
 
@@ -169,7 +170,11 @@
 .simply__content{
     width: 50%;
 }
-    
+    /*****FOOTER SECTION*****/
+.footer__row{
+    grid-template-columns: repeat(2,1fr);
+}
+
 }
 
 
@@ -203,6 +208,45 @@
 .simply__content{
     width: 100%;
 }
+/********footer***********/
 
-    
+.footer__col{
+    margin-top: 3rem;
+}
+.footer__col--imgs > * + *{
+  margin: 2rem 0 0 0;
+
+}    
+.footer__icon > * + *{
+    margin:0 0 0 2rem;
+}
+}
+
+/***********************/
+/******Smaller phone size*******/
+/***********************/
+@media(max-width:544px){
+    .footer__row{
+    grid-template-columns: repeat(1,1fr);
+    /* align-items: center; */
+    /* justify-items: center; */
+}
+
+.footer__sub{
+    grid-row: 1;
+}
+.footer__input{
+    width: 80%;
+}
+.footer__col--imgs{
+    grid-row: 3;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.footer__logo{
+    margin-top: 5rem;
+}
+.footer__icon > * + *{
+  margin: 0  0 0 4.5rem;
+}
 }
