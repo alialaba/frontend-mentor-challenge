@@ -7,22 +7,54 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Easybank landing page</title>
+  <!-- /****CUSTOM STYLE SHEET***/ -->
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/queries.css">
+<!-- /****GOOGLE FONTS ***/ -->
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+<!-- /**** IONICONS SCRIPT ***/ -->
+<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
+<header>
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="#" class="brand">
+        <img  src="./images/logo.svg" alt="easybank-logo"/>
+      </a>
+      <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link">Home</a></li>
+        <li class="nav__item"><a class="nav__link">About</a></li>
+        <li class="nav__item"><a class="nav__link">Contact</a></li>
+        <li class="nav__item"><a class="nav__link">Blog</a></li>
+        <li class="nav__item"><a class="nav__link">Careers</a></li>
 
-  Home
-  About
-  Contact
-  Blog
-  Careers
+      </ul>
+      </nav>
+      <div class="menu" data-state="switch">
+        <div class="menu__icon">
+          <ion-icon class="menu__toggle" name="menu-outline"></ion-icon>
+          <ion-icon class="menu__toggle" name="close-outline"></ion-icon>
+        </div>
+          <a class="btn menu__btn">Request Invite</a>
+      </div>
+      
+    </div>
+  </div>
 
-  Request Invite
+</header>
+ 
+
+  
 
 
 
