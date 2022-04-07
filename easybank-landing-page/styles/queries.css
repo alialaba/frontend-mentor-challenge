@@ -1,0 +1,107 @@
+/********************/
+/*1012px*/
+/********************/
+@media(min-width:63.25em){
+    /********************/
+    /*HEADER*/
+    /********************/
+    
+    .nav__list{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        --flow-space-left:2rem;
+
+    }
+    .nav__link{
+        font-size: var(--fs-sm);
+        font-weight: var(--fw-400);
+    }
+    .menu[data-state="switch"] .menu__icon{
+        display: none;
+    }
+
+
+}
+
+/********************/
+/*1011px*/
+/********************/
+@media(max-width:63.188em) {
+    /********************/
+    /*HEADER*/
+    /********************/
+    html {
+        /* 8px / 16px = 0.5 = 50% */
+        font-size: 50%;
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transform: translateX(100%);
+        transition: .2s all ease-in;
+        height: 100%;
+        background-color: var(--clr-neutral-300);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 0 2rem;
+        visibility: hidden;
+    }
+    
+    .nav__list {
+        position: absolute;
+        left: 20%;
+        top: 100px;
+        text-align: center;
+        font-size: var(--fs-md);
+        cursor: pointer;
+        --flow-space-top: 3rem;
+    }
+    
+    .nav-open .nav {
+        transform: translateX(50%);
+        visibility: visible;
+    }
+    
+    .nav-open .menu[data-state="switch"] .menu__toggle[name="menu-outline"] {
+        display: none;
+    }
+    
+    .nav-open .menu[data-state="switch"] .menu__toggle[name="close-outline"] {
+        display: block;
+    }
+    
+.menu[data-state="switch"] .menu__btn {
+    display: none;
+}
+
+[name="menu-outline"],
+[name="close-outline"] {
+    width: 3rem;
+    height: 3rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.menu[data-state="switch"] .menu__toggle[name="menu-outline"] {
+    display: block;
+}
+
+.menu[data-state="switch"] .menu__toggle[name="close-outline"] {
+    display: none;
+}
+
+    
+    
+}
+
+/********************/
+/*600px*/
+/********************/
+@media(max-width:37.5em) {
+    
+}
