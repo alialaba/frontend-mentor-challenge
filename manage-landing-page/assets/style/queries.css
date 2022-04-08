@@ -70,6 +70,19 @@
 /* BELOW 944px (Tablets) */
 /**************************/
 @media(max-width:1001px){
+    .overlay{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 100%;
+       
+        display: none;
+    }
+    .overlay.show{
+        display: block;
+    }
 
      .heading{
         font-size: 4rem;
@@ -90,14 +103,17 @@
      .nav {
         /* centering using positioning absolute */
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,20%);
+        left: 50%; 
+        top: 0;
+        z-index: 1;
+        transform: translate(-50%,40%);
         transition: all  0.5s ease-in;
-        background-color: var(--clr-light-gray);
+        background-color: #fff;
+        /* background-color: var(--clr-light-gray); */
         box-shadow: 2px 3px 5px rgba(66, 62, 62, 0.1);
         border-radius: 3px;
         padding: 4rem ;
+        margin: 0 auto;
         width: 100%;
        /* Hide navigation */
     /* Allows NO transitions at all */
