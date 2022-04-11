@@ -17,6 +17,27 @@
         font-size: var(--fs-sm);
         font-weight: var(--fw-400);
     }
+/* border hover effect styling */
+    .nav__link::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        display: block;
+        /* width: 0; */
+        height: 3px;
+        background: linear-gradient( var(--linear-gradient));
+        transition:  width .2s;
+    }
+    .nav__link:hover::after,
+    .nav__link:focus::after
+    /* .nav__link:active::after this will allow first list to have an active*/
+    {
+        width: 100%;
+        
+    }
+    
+
     .menu[data-state="switch"] .menu__icon{
         display: none;
     }
