@@ -42,7 +42,32 @@
     .menu[data-state="switch"] .menu__icon{
         display: none;
     }
+/*********HERO SECTION***********/
 
+.hero-section{
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 550px -250px ;
+}
+
+.hero{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+}
+.hero__content{
+    max-width: 400px;
+    --flow-space-top:2rem;
+    /* align-self: center; */
+}
+.hero__title{
+    font-size: 5rem;
+   
+}
+.hero__img{
+    position: relative;
+    left: 150px;
+    bottom: 140px;
+}
 
 }
 
@@ -117,7 +142,7 @@
     display: none;
 }
 
-    
+/*********HERO SECTION***********/
     
 }
 
