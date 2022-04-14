@@ -163,7 +163,31 @@ section{
   display: grid;
   position: relative;
 }
+.hero__content{
+  --flow-space-top:2rem;
+}
+.hero__title {
+  font-size: 5rem;
+
+}
 .text{
   color: var(--clr-neutral-600);
   font-size: var(--fs-sm);
+}
+
+/********ABOUT SECTION*******/
+.about-grid__column{
+  --flow-space-top:2rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap:3rem;
+}
+.about-section{
+  background-color: var(--clr-neutral-500) ;
+}
+.about__content{
+  --flow-space-top:2rem;
+  margin-bottom: 3rem;
 }
