@@ -64,10 +64,28 @@
 }
 .hero__img{
     position: relative;
-    left: 150px;
+    left: 170px;
     bottom: 140px;
+    z-index: 1;
+}
+/*********ABOUT SECTION***********/
+.about-section{
+    position: relative;
+    bottom: 300px;
+}
+.about__content{
+    max-width: 500px;
+}
+.about__title{
+    font-size: 3.5rem;
 }
 
+.about-grid__title{
+    font-size: var(--fs-md);
+}
+.text{
+    font-size: var(--fs-sm);
+}
 }
 
 /********************/
@@ -162,6 +180,18 @@
 .text{
     font-size: var(--fs-md);
 }
+/***********ABOUT SECTION**************/
+
+.about__content{
+    max-width: 500px;
+}
+.about__title{
+    font-size: 3rem;
+}
+.about-grid__title{
+    font-size: var(--fs-md);
+}
+
 }
 
 /********************/

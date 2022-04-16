@@ -18,7 +18,7 @@
     --fw-400:400;
     --fw-700:700;
 
-    --fs-sm:1.4rem;
+    --fs-sm:1.6rem;
     --fs-md:1.8rem;
     --fs-lg:2.5rem;
     --fs-x-lg:4rem;
@@ -172,7 +172,7 @@ section{
 }
 .text{
   color: var(--clr-neutral-600);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-md);
 }
 
 /********ABOUT SECTION*******/
@@ -181,13 +181,14 @@ section{
 }
 .grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  grid-gap:3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  row-gap: 2rem;
+  column-gap: 4rem;
 }
 .about-section{
   background-color: var(--clr-neutral-500) ;
 }
 .about__content{
   --flow-space-top:2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
