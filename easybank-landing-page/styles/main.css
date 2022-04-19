@@ -192,3 +192,16 @@ section{
   --flow-space-top:2rem;
   margin-bottom: 4rem;
 }
+/**********ARTICLE SECTION***********/
+.pm-space{
+  padding: 1.5rem 3rem;
+  --flow-space-top:1rem;
+}
+.article-grid__column{
+  background-color: #fff;
+  border-radius: 5px;
+}
+.article-grid__img{
+  object-fit: contain;
+  border-radius: 5px;
+}
