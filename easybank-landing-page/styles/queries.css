@@ -123,12 +123,14 @@
         -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         padding: 0 2rem;
         visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .nav__list {
-        position: absolute;
-        left: 20%;
-        top: 100px;
         text-align: center;
         font-size: var(--fs-md);
         cursor: pointer;
@@ -136,7 +138,7 @@
     }
     
     .nav-open .nav {
-        transform: translateX(50%);
+        transform: translateX(0);
         visibility: visible;
     }
     
