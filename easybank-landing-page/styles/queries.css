@@ -70,9 +70,6 @@
 }
 /*********ABOUT SECTION***********/
 .about-section{
-    /* position: relative;
-    bottom: 0;
-    top: -300px; */
     margin-top:-300px;
 }
 .about__content{
@@ -204,8 +201,11 @@
     font-size: var(--fs-md);
 }
 /********ARTICLE SECTION***********/
+.article-grid__name{
+font-size:1.3rem ;
+}
 .article-grid__title{
-
+    font-size: var(--fs-lg);
 }
 }
 
