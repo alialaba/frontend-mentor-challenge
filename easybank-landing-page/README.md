@@ -90,3 +90,22 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+
+### Smooth Scrolling (step by step)
+
+BELOW FOR HTML
+- Required (#name-section) in the anchor tag href
+- Each section should have id(name-section) 
+
+BELOW FOR JS
+- declare a variable for all links (a:link)
+- loop through the variable above using forEach method
+- listen to a click event 
+- declare a variable that to get attribute of the loop link
+- using conditional statement to check if the above variable is equal to href window.scrollTo ({top:0, behavior: 'smooth'})
+- using conditional statement to check if above variable not equal '#' and variable startwith '#'then declare var (href)
+Element.scrollIntoView({behavior: 'smooth'})
+
+
+
