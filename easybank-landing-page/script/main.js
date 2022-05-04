@@ -16,7 +16,7 @@ allLinks.forEach((link) => {
         const href = link.getAttribute("href")
         if (href === "#") {
             window.scrollTo({
-                left: 100,
+                top: 0,
                 behavior: "smooth"
             })
         }
