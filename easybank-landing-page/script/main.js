@@ -12,7 +12,8 @@ const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
-        console.log("clicked");
+
+        // Scroll back to top
         const href = link.getAttribute("href")
         if (href === "#") {
             window.scrollTo({
@@ -20,11 +21,18 @@ allLinks.forEach((link) => {
                 behavior: "smooth"
             })
         }
+
+        // Scroll to other links
         if (href !== "#" && href.startsWith("#")) {
             const sectionEl = document.querySelector(href);
             sectionEl.scrollIntoView({
                 behavior: "smooth"
             })
+        }
+
+        // Close mobile navigation
+        if (link.classList.contains("nav__link")) {
+            headerEl.classList.toggle("nav-open")
         }
     })
 })

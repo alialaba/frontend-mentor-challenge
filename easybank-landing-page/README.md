@@ -106,6 +106,7 @@ BELOW FOR JS
 - using conditional statement to check if the above variable is equal to href window.scrollTo ({top:0, behavior: 'smooth'})
 - using conditional statement to check if above variable not equal '#' and variable startwith '#'then declare var (href)
 Element.scrollIntoView({behavior: 'smooth'})
+- using conditional statement check (link) contain classList of nav__link 
 
 
 

@@ -18,8 +18,8 @@
     --fw-400:400;
     --fw-700:700;
 
-    --fs-sm:1.6rem;
-    --fs-md:1.8rem;
+    --fs-sm:1.7rem;
+    --fs-md:1.9rem;
     --fs-lg:2.5rem;
     --fs-x-lg:4rem;
 
@@ -173,6 +173,7 @@ section{
 .text{
   color: var(--clr-neutral-600);
   font-size: var(--fs-md);
+  
 }
 .article-grid__name{
   color: var(--clr-neutral-600);
@@ -198,7 +199,7 @@ section{
 }
 /**********ARTICLE SECTION***********/
 .pm-space{
-  padding: 2.8rem;
+  padding: 2rem ;
   --flow-space-top:1rem;
 }
 .article-grid__column{
