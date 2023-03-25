@@ -1,0 +1,152 @@
+:root{
+    --clr-dark-violet: hsl(256, 26%, 20%);
+    --clr-grayish-blue: hsl(216, 30%, 68%);
+    --clr-neu-dark-violet: hsl(270, 9%, 17%);
+    --clr-neu-grayish-violet:hsl(273, 4%, 51%);
+    --clr-neu-light-gray:hsl(0, 0%, 98%);
+}
+
+/********************/
+/*CSS RESETS*/
+/********************/
+/* 1. Use a more-intuitive box-sizing model. */
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin/padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Allow perccentage based height */
+html,body{
+    height: 100%;
+}
+/* 4. Improve media defaults */
+img, picture, svg{
+    display: block;
+    max-width: 100%;
+}
+
+/* 5. Avoid text overflows */
+p,h1,h2, h3, h4,h5,h6{
+    overflow-wrap: break-word;
+}
+
+/*
+  Typographic tweaks!
+  6. Add accessible line-height and Improve text rendering
+*/
+body {
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  font-family: 'Karla',
+  sans-serif;
+  }
+
+  /* 7. Remove built-in form typography styles */
+  
+   button {
+    font: inherit;
+  }
+
+  h1,h2{
+    font-family: 'DM Serif Display', serif;
+    font-family: 400;
+  }
+
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+
+  /* Container Style */
+.container{
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 85%;
+}
+
+section{
+  padding: 6em 0;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+/*HOW IT WORKS*/
+.howit-work__row{
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 2rem;
+  margin-bottom: 5em;
+
+}
+.action-box{
+  background-color: var(--clr-dark-violet);
+  max-width: 900px;
+  padding: 3rem;
+  width: 80;
+  display: flex;
+margin: 0 auto;
+}
+.action-box__title{
+  color: #fff;
+}
+
+/* FOOTER */
+footer{
+  background-color: var(--clr-neu-light-gray);
+
+  background-image: url("/images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  
+  padding: 6em 0;
+}
+
+.footer__layer1{
+  margin-bottom: 2em;
+}
+
+hr{
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+}
+
+
+
+.footer__social{
+  display: flex;
+ column-gap: 10px;
+
+}
+
+.footer__layer2{
+  display: flex;
+  justify-content: space-between;
+  /* border-top: 1px solid red; */
+}
+
+/*GENERAL*/
+.footer__title{
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  color: var(--clr-neu-grayish-violet);
+  font-weight: 700;
+}
+
+.footer__link{
+  text-transform: uppercase;
+  color: var(--clr-neu-dark-violet);
+  font-weight: 700;
+}
+
+
+
+
