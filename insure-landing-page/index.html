@@ -15,26 +15,32 @@
 
 </head>
 <body>
-  <header>
-    <nav class="menu">
-      <div class="menu__logo">
-
+  <header class="header">
+    <div class="container row">
+      <div class="header__logo">
+        <img src="./images/logo.svg" alt="insure logo"/>
       </div>
-      <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link">How we work</a></li>
-        <li class="menu__item"><a class="menu__link"> Blog</a></li>
-        <li class="menu__item"><a class="menu__link">Account</a></li>
-        <li class="menu__item"><a class="menu__link">View plans</a></li>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link">How we work</a></li>
+        <li class="nav__item"><a class="nav__link"> Blog</a></li>
+        <li class="nav__item"><a class="nav__link">Account</a></li>
+        <li class="nav__item nav__item--btn"><a class="nav__link nav__link--btn">View plans</a></li>
       </ul>
     </nav>
+    <span class="header__toggle">
+      <img src="./images/icon-hamburger.svg" alt="hamburger"/>
+  </span>
+  
+  </div>
   </header>
 
   
 <main>
   <!-- intro section -->
   <section>
-    <div class="container">
     <div class="intro">
+    <div class="container row">
       <div class="intro__content">
         <h1 class="intro__title">Humanizing your insurance.</h1>
         <p class="intro__text">
@@ -44,8 +50,10 @@
         </p>
         <button class="intro__btn">  View plans</button>
       </div>
-
-      <img src="/images/image-intro-desktop.jpg">
+<!-- <div class="intro__img"> -->
+  <img src="/images/image-intro-desktop.jpg" alt="A family image">
+<!-- </div> -->
+     
       
     </div>
   </div>
@@ -61,7 +69,7 @@
             <!-- snappy process -->
             <div class="howit-work__column">
               <div class="howit-work__img">
-                <img src="/images/icon-snappy-process.svg" alt="">
+                <img src="/images/icon-snappy-process.svg" alt="process icon">
               </div>
               <h4 class="howit-work__subtitle">  Snappy Process</h4>
               <p class="howit-work__text">Our application process can be completed in minutes, not hours. Don’t get 
@@ -170,9 +178,19 @@
     </footer>
 </main> 
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+  <script>
+    let hamburger = document.querySelector(".header__toggle");
+    let navheader = document.querySelector(".header")
+
+    hamburger.addEventListener("click", ()=>{
+     navheader.classList.toggle("nav--open")
+
+    })
+    </script>
 </body>
 </html>
