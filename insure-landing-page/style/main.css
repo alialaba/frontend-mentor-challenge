@@ -109,19 +109,41 @@ body {
   color: var(--clr-neu-grayish-violet);
   font-size: 1rem;
   text-transform: uppercase;
+  transition: 0.2s all ease-in-out;
 }
 
 .nav__item--btn{
   border: 2px solid var(--clr-dark-violet);
   padding: 0.6em 1.2em ;
 }
+
 .nav__link--btn{
   color: var(--clr-dark-violet);
   font-weight: 700;
 }
+/* START NAVIGATION ACTIVE STATE*/
+.nav:hover .nav__link{
+  opacity: 0.4;
+}
+
+.nav .nav__link:hover{
+  color:  var(--clr-dark-violet);
+  opacity: 1;
+}
+.nav .nav__item--btn:hover{
+  background-color: var(--clr-dark-violet);
+  
+}
+
+.nav .nav__link--btn:hover{
+  color: #fff;
+}
+
+/*END NAVIGATION ACTIVE STATE*/
 .header__toggle{
   display: none;
 }
+/* .header__toggle .menu--close */
 /* INTRO SECTION */
 .intro{
   background-color: var(--clr-dark-violet);
@@ -207,8 +229,14 @@ hr{
 /*****************/
 /* MEDIA QUERIES */
 /*****************/
+/** larger tablet and desktop screens **/
 
-/** mobile + tablet **/
+@media(min-width:769px) and (max-width:1000px){
+  
+
+}
+
+/** mobile + tablet  screens**/
 
 @media (max-width:499px), (min-width: 500px) and (max-width:768px){
 
@@ -230,12 +258,7 @@ hr{
   transform: scale(1, 0);
   width: 100%;
 }
-.nav--open   .nav{
-display:block;
-transform: scale(1, 1);
-transform-origin: top;
-transition: transform 0.3s ease-in-out;
-}
+
 .nav__list {
   /* width: 100%; */
   align-items: center;
@@ -246,19 +269,52 @@ transition: transform 0.3s ease-in-out;
 
 }
 
-
 .nav__item + .nav__item{
   margin-left: 0;
   margin-top: 1em;
 }
-
+.nav__link{
+  color:#fff;
+}
 .nav__item--btn{
   border: 1px solid #fff;
 }
 
-.nav__link{
-  color:#fff;
+.menu--close{
+  display: none;
 }
+
+/*Toggle navigation*/
+.nav--open   .nav{
+  display:block;
+  transform: scale(1, 1);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+  }
+  .nav--open .menu--close{
+    display: block;
+  }
+  .nav--open .menu--open{
+    display: none;
+  }
+/* START NAVIGATION ACTIVE STATE*/
+.nav:hover .nav__link{
+  opacity: 0.4;
+}
+.nav .nav__link:hover{
+  color: #fff;
+  opacity: 1;
+}
+.nav .nav__item--btn:hover{
+  background-color: #fff;
+
+}
+.nav .nav__link--btn:hover{
+  color: var(--clr-dark-violet);
+}
+/*END NAVIGATION ACTIVE STATE*/
+
+
 
  .header__toggle{
   display:block;
@@ -277,4 +333,5 @@ transition: transform 0.3s ease-in-out;
   background-position: bottom;
   }
 
+  
 }
