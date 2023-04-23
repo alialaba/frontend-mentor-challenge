@@ -24,7 +24,8 @@ This is a solution to the [Insure landing page challenge on Frontend Mentor](htt
 ### Requirements
 - Responsive fluid layout 
 - Navigation toggle for mobile
-- 
+- hover states
+- sticky navigation header
 ### The challenge
 
 Users should be able to:
@@ -34,7 +35,7 @@ Users should be able to:
 
 ### Screenshot
 
-![insure landing page](https://ibb.co/311J7HX)
+[insure landing page](https://ibb.co/311J7HX)
 
 
 ### Links
