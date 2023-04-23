@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Screenshot
 
-[insure landing page](https://ibb.co/311J7HX)
+![insure landing page](./images/screenshot.png)
 
 
 ### Links
