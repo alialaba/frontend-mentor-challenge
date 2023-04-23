@@ -5,10 +5,10 @@
   --clr-neu-grayish-violet:hsl(273, 4%, 51%);
   --clr-neu-light-gray:hsl(0, 0%, 98%);
 
-  --fs-xl: 4.165rem;
+  --fs-xl: 4.3rem;
   --fs-heading:3rem;
   --fs-subheading:2.7rem;
-  --fs-600: 1.5rem;
+  --fs-600: 1.4rem;
   --fs-400: .9rem;
 }
 
@@ -123,7 +123,7 @@ margin-left: 1.5em;
 .nav__link{
 color: var(--clr-neu-grayish-violet);
 cursor: pointer;
-/* font-size: .9rem; */
+font-size: var(--fs-400);
 text-transform: uppercase;
 transition: 0.2s all ease-in-out;
 }
@@ -133,6 +133,7 @@ transition: 0.2s all ease-in-out;
   font-weight: 700;
   border: 2px solid var(--clr-dark-violet);
 }
+
 /* START NAVIGATION ACTIVE STATE*/
 .nav:hover .nav__link{
 opacity: 0.4;
@@ -144,8 +145,8 @@ opacity: 1;
 }
 
 .nav .nav__link--btn:hover{
-color: var(--clr-neu-light-gray);
 background-color: var(--clr-dark-violet);
+color: var(--clr-neu-light-gray);
 }
 
 /*END NAVIGATION ACTIVE STATE*/
@@ -168,7 +169,6 @@ display: none;
   position: absolute;
   height: 504px;
   width: 195px;
-  /* display: block; */
 }
 .intro::after{
   background-image: url(/images/bg-pattern-intro-right-desktop.svg);
@@ -180,13 +180,12 @@ display: none;
   top: -50px;
   height: 593px;
   width: 436px;
-  /* display: block; */
+}
+.intro__content{
+  width: 47%;
+
 }
 
-.intro__content{
-  /* width: 46%; */
-  /* align-self: center; */
-}
 .intro__text, .intro__title{
   margin-bottom: 2rem;
 }
@@ -201,18 +200,6 @@ display: none;
   top: 180px;
 }
 
-.intro__title{
-  /* font-size: clamp(2rem, 4vw , 18rem); */
-  /* font-size: var(--fs-xl); */
-  /* line-height: 1; */
-  
-}
-.intro__text{
-  /* font-size: clamp(1rem, 2vw , 1.25rem); */
-}
-/* .intro__img {
-  width: 48%;
-} */
 /*****************/
 /* How it works */
 /*****************/
@@ -258,8 +245,6 @@ display: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  /* margin: 0 auto; */
   padding: 3rem;
 }
 .action-box__title{
@@ -278,17 +263,17 @@ display: none;
 }
 
 .footer__header{
-  padding-bottom: 2em;
+  align-items: center;
   border-bottom: 2px solid #e4e4e4;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  padding-bottom: 2em;
 
 }
 
 .footer__social-link{
-  font-size: 24px;
    color: #837D87;
+  font-size: 24px;
   transition: 0.2s;
 }
 
@@ -308,16 +293,17 @@ display: none;
 }
 
 .footer__title{
-  margin-bottom: 1.5em;
-  text-transform: uppercase;
   color: var(--clr-neu-grayish-violet);
   font-weight: 700;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
 }
 
 .footer__link{
-  text-transform: uppercase;
   color: var(--clr-neu-dark-violet);
+  font-size: var(--fs-400);
   font-weight: 700;
+  text-transform: uppercase;
 }
 .footer__link:hover{
   text-decoration: underline;
@@ -327,11 +313,6 @@ display: none;
 /* MEDIA QUERIES */
 /*****************/
 /** larger tablet and desktop screens **/
-
-.intro__content{
-  width: 47%;
-
-}
 
 @media(min-width:1000px){
   .intro__title{
@@ -346,19 +327,15 @@ display: none;
  
   .intro__img{
     transform: translateY(150px);
-    /* width: 48%; */
-
   }
-  /* .intro__img + .intro__content{} */
+
   .howit-work__title{
     font-size: var(--fs-heading);
   }
   .howit-work__subtitle{
     font-size: var(--fs-600);
   }
-  .howit-work__text{
-    /* font-size: var(--fs-400); */
-  }
+
   .action-box{
     padding: 3rem 6rem;
   }
@@ -381,16 +358,25 @@ display: none;
 
   }
 
+
+  /**** INTRO *****/
+
   .intro__title{
     font-size: var(--fs-xl);
     line-height: 0.9;
     
   }
-
+.intro__title::before{
+  display: none;
+}
   .intro__row{
     padding: 2em 0em;
   }
+  .intro__img{
+    transform: translateY(100px);
+  }
 
+    /**** How it works*****/
   .howit-work__title{
    font-size: var(--fs-heading);
   }
@@ -579,12 +565,7 @@ background-repeat: no-repeat;
 background-position: bottom;
 }
 
-
-/**************/
-/* INTRO */
-/*************/
-
-  /*****************/
+/*****************/
 /* HOW IT WORKS */
 /*****************/
 .howit-work__title{
@@ -604,14 +585,14 @@ justify-content: center;
 
 }
 .action-box{
-  background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
-  text-align: center;
   align-items: center;
+  background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
   justify-content: center;
+  text-align: center;
 }
 
-  /*****************/
-/* HOW IT WORKS */
+/*****************/
+/* Footer */
 /*****************/
 .footer__header{
   flex-direction: column;
